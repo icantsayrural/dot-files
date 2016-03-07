@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/joannehong'
+let g:netrw_dirhist_2='/Users'
+let g:netrw_dirhist_3='/'
+let g:netrw_dirhist_4='/Users/joannehong/vagrant/src/BladeRunner/test/controllers'
+let g:netrw_dirhist_5='/Users/joannehong/vagrant/src/BladeRunner/test/controllers/devices'
+let g:netrw_dirhist_6='/Users/joannehong/vagrant/src/shopify/test/fixtures/master'
+let g:netrw_dirhist_7='test/unit/jobs/account_updater'
+let g:netrw_dirhist_8='/Users/joannehong/vagrant'
