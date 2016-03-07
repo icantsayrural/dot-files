@@ -26,6 +26,7 @@ map <Tab>j :$<CR>
 map <Tab>h 0<CR>
 map <Tab>l $<CR>
 nnoremap ; :
+map <Space> :!
 
 " tabs
 set tabstop=2
@@ -40,3 +41,4 @@ set completefunc=RCT_completion
 
 " miscellaneous
 set mouse=a
+set backspace=2 " don't allow other mappings to backspace
