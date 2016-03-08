@@ -42,3 +42,8 @@ set completefunc=RCT_completion
 " miscellaneous
 set mouse=a
 set backspace=2 " don't allow other mappings to backspace
+
+" no backups since everything is in github anyway
+set nobackup
+set nowb
+set noswapfile
