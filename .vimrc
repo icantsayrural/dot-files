@@ -19,6 +19,7 @@ set smartcase
 
 " general key mappings
 map q :q<CR>
+map <Tab>q :q!<CR>
 map wq :wq<CR>
 map w :w<CR>
 map <Tab>k :0<CR>
