@@ -1,9 +1,9 @@
 " theme
 execute pathogen#infect()
 syntax on
-color badwolf
-hi Normal ctermbg=none
-hi NonText ctermbg=none
+set t_Co=16
+colorscheme solarized
+set background=dark
 set number " vim is numbered
 set cursorline " highlight current line
 
@@ -35,7 +35,6 @@ set shiftwidth=2
 set expandtab " use spaces instead of tabs
 
 " detect inconsistencies
-set list " whitespace
 hi ColorColumn ctermbg=grey
 call matchadd('ColorColumn', '\%81v', 80) " line length (80 is standard limit)
 set completefunc=RCT_completion
@@ -53,3 +52,4 @@ set noswapfile
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
+
