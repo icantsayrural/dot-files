@@ -28,13 +28,16 @@ export EDITOR=vim
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 # Git bash prompt
-source ~/.git-prompt.sh
-
-export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\e[0;32m\]$(__git_ps1 " (%s)")\e[m \$\[\033[00m\] '
+#source ~/.git-prompt.sh
+#export GIT_PS1_SHOWDIRTYSTATE=1
+#export PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[01;34m\] \w\[\e[0;32m\]$(__git_ps1 " (%s)")\e[m \$\[\033[00m\] '
 
 # Git autocomplete
 # curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ~/.git-completion.bash
 if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 fi
+
+# airline promptline
+# https://github.com/edkolev/promptline.vim
+source ~/.promptline_preset
