@@ -3,10 +3,20 @@
 execute pathogen#infect()
 syntax on
 set t_Co=16
+
+if system('uname -s') == "Darwin\n"
+  let g:solarized_termcolors=256 " MAC OS
+endif
+
 colorscheme solarized
 set background=dark
 set number " vim is numbered
 set cursorline " highlight current line
+
+if system('uname -s') == "Darwin\n"
+  hi CursorLine cterm=NONE ctermfg=NONE ctermbg=DarkGrey gui=NONE guifg=NONE guibg=NONE " MAC OS
+  hi LineNr cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE " MAC OS
+endif
 
 " Status line setup
 " from https://github.com/vim-airline/vim-airline
@@ -71,3 +81,9 @@ set list listchars=trail:.,extends:>
 
 " Set no wrap
 set nowrap
+
+" don't reset cursor to start of line when moving around
+set nostartofline
+
+" Show the filename in the window titlebar
+set title
