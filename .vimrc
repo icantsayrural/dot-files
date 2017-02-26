@@ -79,11 +79,31 @@ endif
 " Highlight white spaces
 set list listchars=trail:.,extends:>
 
-" Set no wrap
-set nowrap
-
 " don't reset cursor to start of line when moving around
 set nostartofline
 
 " Show the filename in the window titlebar
 set title
+
+" Rainbow parentheses
+let g:rbpt_colorpairs = [
+    \ ['red',         'RoyalBlue3'],
+    \ ['brown',       'SeaGreen3'],
+    \ ['blue',        'DarkOrchid3'],
+    \ ['gray',        'firebrick3'],
+    \ ['green',       'RoyalBlue3'],
+    \ ['magenta',     'SeaGreen3'],
+    \ ['cyan',        'DarkOrchid3'],
+    \ ['darkred',     'firebrick3'],
+    \ ['brown',       'RoyalBlue3'],
+    \ ['darkblue',    'DarkOrchid3'],
+    \ ['gray',        'firebrick3'],
+    \ ['darkgreen',   'RoyalBlue3'],
+    \ ['darkmagenta', 'SeaGreen3'],
+    \ ['darkcyan',    'DarkOrchid3'],
+    \ ['red',         'firebrick3'],
+    \ ]
+let g:rbpt_max = 15
+let g:rbpt_loadcmd_toggle = 0
+let g:bold_parentheses = 1      " Default on
+au VimEnter * RainbowParenthesesToggle
