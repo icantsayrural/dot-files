@@ -1,10 +1,9 @@
-" theme
-" from https://github.com/altercation/vim-colors-solarized
+" Plugins
 execute pathogen#infect()
+
 syntax on
 set t_Co=16
-
-colorscheme solarized
+colorscheme solarized " note: for MAC OS you need to manually add the theme in settings (get theme from https://github.com/altercation/vim-colors-solarized)
 set background=dark
 set number " vim is numbered
 set cursorline " highlight current line
@@ -14,7 +13,6 @@ set cursorline " highlight current line
 set laststatus=2 " always show status line
 let g:airline_theme='light'
 let g:airline_powerline_fonts=1 " note: must download fonts from git@github.com:powerline/fonts.git and set the terminal font for >
-" note: must download https://github.com/tpope/vim-fugitive to show git branches
 
 " Tab setup
 " usage: tabedit (tabe) and tabfind (tabf)
