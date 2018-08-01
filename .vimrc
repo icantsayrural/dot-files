@@ -99,3 +99,6 @@ au VimEnter * RainbowParenthesesToggle
 
 " Nerd tree toggle
 map <C-n> :NERDTreeToggle<CR>
+
+" Gdiff vertical split instead of default horizontal
+set diffopt+=vertical
