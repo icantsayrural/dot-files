@@ -96,3 +96,6 @@ let g:rbpt_max = 15
 let g:rbpt_loadcmd_toggle = 0
 let g:bold_parentheses = 1      " Default on
 au VimEnter * RainbowParenthesesToggle
+
+" Nerd tree toggle
+map <C-n> :NERDTreeToggle<CR>
