@@ -10,3 +10,7 @@
 
 ## c++ setup
 - Auto complete via clang_complete plugin. Use `Ctrl+N` for autocomplete.
+- ctags (install via homebrew)
+  - run `ctags -R .` to create a `tags` folder in the project directory
+  - command `g]` to go to definition
+  - command `<ctrl-T>` to pop back
