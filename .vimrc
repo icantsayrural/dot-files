@@ -102,3 +102,8 @@ map <C-n> :NERDTreeToggle<CR>
 
 " Gdiff vertical split instead of default horizontal
 set diffopt+=vertical
+
+" C++ clang_complete plugin for macosx setup
+" Installation guide: https://vimawesome.com/plugin/clang-complete
+" You will need to install Xcode on your machine
+let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/libclang.dylib"
