@@ -122,3 +122,28 @@ let g:syntastic_check_on_wq = 0
 " Enable c++11 standards
 let g:syntastic_cpp_compiler = 'clang++'
 let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++'
+
+" neomake
+" When writing a buffer (no delay).
+call neomake#configure#automake('w')
+hi NeomakeError cterm=underline
+hi NeomakeWarning cterm=underline
+hi NeomakeInfo cterm=underline
+hi NeomakeMessage cterm=underline
+hi NeomakeErrorSign ctermfg=1 ctermbg=none
+hi NeomakeWarningSign ctermfg=9 ctermbg=none
+hi NeomakeInfoSign ctermfg=5 ctermbg=none
+hi NeomakeMessageSign ctermfg=5 ctermbg=none
+let g:neomake_error_sign = {'text': '-!', 'texthl': 'NeomakeErrorSign'}
+let g:neomake_warning_sign = {'text': '-!', 'texthl': 'NeomakeWarningSign'}
+let g:neomake_info_sign = {'text': '-i', 'texthl': 'NeomakeInfoSign'}
+let g:neomake_message_sign = {'text': '->', 'texthl': 'NeomakeMessageSign'}
+let g:neomake_c_enabled_makers = ['clang', 'clangtidy']
+let g:neomake_c_clangtidy_args = ['-extra-arg=-std=c99', '-checks=\*']
+let g:neomake_c_clang_args = ['-std=c99', '-Wextra', '-Weverything', '-pedantic', '-Wall', '-Wno-unused-parameter', '-g']
+let g:neomake_cpp_enabled_makers = ['clang', 'clangtidy']
+let g:neomake_cpp_clangtidy_args = ['-checks=\*',
+            \'-extra-arg=-std=c++14 -I/usr/local/opt/boost/include -I~/range-v3/include -I~/Documents/Cinder.git/include']
+let g:neomake_cpp_clang_args = ['-std=c++1y', '-Wextra', '-Weverything', '-pedantic', '-Wall', '-Wno-unused-parameter', '-Wno-c++98-compat', '-g',
+            \'-I/usr/local/opt/boost/include', '-I~/Documents/Cinder.git/include', '-I~/range-v3/include']
+let g:neomake_haskell_enabled_makers = ['hlint', 'ghcmod']
