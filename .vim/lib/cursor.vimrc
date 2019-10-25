@@ -1,4 +1,5 @@
 set cursorline
+set number
 
 " setting colours for line and number
 hi CursorLine cterm=NONE ctermbg=240
@@ -14,3 +15,6 @@ endif
 
 " enable mouse to position cursor
 set mouse=a
+
+" Highlight white spaces
+set list listchars=trail:.,extends:>
