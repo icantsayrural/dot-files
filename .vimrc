@@ -16,3 +16,4 @@ source ~/.vim/lib/cursor.vimrc
 source ~/.vim/lib/search.vimrc
 source ~/.vim/lib/hotkey.vimrc
 source ~/.vim/lib/tab.vimrc
+source ~/.vim/lib/status_line.vimrc
