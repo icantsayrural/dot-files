@@ -1,22 +1,4 @@
 export EDITOR=vim
 
-function parse_git_dirty {
-  [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit, working tree clean" ]] && echo "*"
-}
-
-function parse_git_branch {
-  git branch 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/[\1$(parse_git_dirty)]/"
-}
-
-function color_my_prompt {
-  local __user_and_host="\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \[\033[0;36m\]\h"
-  local __cur_location="\[\033[01;34m\]\w"
-  local __git_branch_color="\[\033[31m\]"
-  local __git_branch="$(parse_git_branch)"
-  local __prompt_tail="\[\033[35m\]->"
-  local __last_color="\[\033[0m\]"
-  export PS1="$__user_and_host $__cur_location $__git_branch_color$__git_branch\n$__prompt_tail$__last_color "
-}
-
-export PROMPT_COMMAND=color_my_prompt
-source ~/.git-completion.bash
+# install starship with curl -fsSL https://starship.rs/install.sh | bash
+eval "$(starship init bash)"
