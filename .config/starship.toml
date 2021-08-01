@@ -3,13 +3,5 @@ $directory\
 $git_branch
 > """
 
-[character]
-success_symbol = "[➜](bold green)"
-error_symbol = "[✗](bold red) "
-
-[cmd_duration]
-min_time = 500
-format = "took [$duration](bold yellow)"
-
 [git_branch]
 symbol = "git "
