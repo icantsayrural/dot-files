@@ -1,3 +1,8 @@
+format = """
+$directory\
+$git_branch
+> """
+
 [character]
 success_symbol = "[➜](bold green)"
 error_symbol = "[✗](bold red) "
@@ -6,3 +11,5 @@ error_symbol = "[✗](bold red) "
 min_time = 500
 format = "took [$duration](bold yellow)"
 
+[git_branch]
+symbol = "git "
