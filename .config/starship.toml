@@ -2,7 +2,17 @@ format = """
 $directory\
 $git_branch\
 $git_status
-> """
+# """
+
+[directory]
+style = "yellow"
+truncate_to_repo = false
+truncation_length = 3
+truncation_symbol = ".../"
 
 [git_branch]
-symbol = "git "
+style = "green"
+symbol = ""
+
+[git_status]
+style = "bold red"
