@@ -5,3 +5,5 @@ eval "$(starship init bash)"
 
 source ~/.git-completion.bash
 
+# Add kubectl-jq to path for k9s jq plugin
+export PATH=$PATH:~/.k9s
