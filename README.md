@@ -7,6 +7,7 @@
 
 ### Installation
 
+* `sudo apt-get install feh`
 * `sudo apt-get install i3`
 * `sudo apt-get install i3-wm dunst i3lock i3status suckless-tools`
 * `sudo apt-get install compton hsetroot rxvt-unicode xsel rofi fonts-noto fonts-mplus xsettingsd lxappearance scrot viewnior`

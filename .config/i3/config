@@ -5,6 +5,9 @@ set $alt Mod1
 # set font
 font pango: Noto Sans 8
 
+# set wallpaper
+exec --no-startup-id nitrogen --set-auto ~/.config/i3/ubuntu.jpg
+
 # Use Mouse+$super to drag floating windows to their wanted position
 floating_modifier $super
 
