@@ -1,8 +1,10 @@
 format = """
-$directory\
-$git_branch\
-$git_status
->> """
+[┌───────────────────>](bold green)
+[│](bold green)$directory$git_branch$git_status
+[└─>](bold green)"""
+
+# Disable the blank line at the start of the prompt
+add_newline = false
 
 [directory]
 style = "yellow"
