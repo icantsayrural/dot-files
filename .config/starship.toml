@@ -20,7 +20,7 @@ style = "green"
 symbol = ""
 
 [git_status]
-style = "bold red"
+style = "bold blue"
 
 # Disable the package module, hiding it from the prompt completely
 [package]
